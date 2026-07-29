@@ -199,3 +199,12 @@ unlockButton.addEventListener("click",function(){
 
 
 });
+const envelope =
+document.getElementById("envelope");
+
+
+envelope.addEventListener("click",function(){
+
+    envelope.classList.add("open");
+
+});

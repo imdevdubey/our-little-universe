@@ -532,9 +532,11 @@ linear-gradient(135deg,#241033,#050014);
 
     border-radius:10px;
 
-    box-shadow:
-    0 0 40px #ffb7d5;
-
+  box-shadow:
+0 0 30px rgba(255,170,200,.5),
+0 0 60px rgba(255,180,220,.4),
+0 0 100px rgba(255,210,230,.25);
+    
 }
 
 
@@ -783,5 +785,33 @@ linear-gradient(135deg,#241033,#050014);
     position:relative;
 
     z-index:2;
+
+}
+.envelope{
+
+    animation:floatEnvelope 4s ease-in-out infinite;
+
+}
+
+
+@keyframes floatEnvelope{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
 
 }

@@ -735,41 +735,43 @@ linear-gradient(135deg,#241033,#050014);
 
     position:absolute;
 
-    width:150%;
+    width:200%;
+    height:200%;
 
-    height:150%;
-
-    top:-25%;
-
-    left:-25%;
+    top:-50%;
+    left:-50%;
 
 
     background:
-    radial-gradient(circle at 30% 40%, rgba(255,190,170,0.35), transparent 30%),
-    radial-gradient(circle at 70% 60%, rgba(220,140,160,0.3), transparent 35%);
+    radial-gradient(ellipse at 20% 30%, rgba(218,150,150,0.35), transparent 35%),
+    radial-gradient(ellipse at 70% 40%, rgba(255,190,160,0.25), transparent 40%),
+    radial-gradient(ellipse at 40% 80%, rgba(190,120,160,0.3), transparent 35%),
+    radial-gradient(ellipse at 90% 80%, rgba(240,170,170,0.25), transparent 35%);
 
 
-    filter:blur(40px);
+    filter:blur(60px);
 
-    animation:cloudMove 15s infinite alternate;
+
+    animation:cloudMove 20s infinite alternate ease-in-out;
+
 
     z-index:0;
 
 }
-
 @keyframes cloudMove {
 
+    from {
 
-from {
+        transform:translate(-5%, -3%);
 
-    transform:translate(-5%,0);
-
-}
+    }
 
 
-to {
+    to {
 
-    transform:translate(5%,5%);
+        transform:translate(5%, 5%);
+
+    }
 
 }
 

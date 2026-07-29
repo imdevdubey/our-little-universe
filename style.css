@@ -574,3 +574,10 @@ button:hover {
     font-family:'Cormorant Garamond',serif;
 
 }
+.letter,
+.letter h2,
+.letter p {
+
+    color:#5a3150 !important;
+
+}

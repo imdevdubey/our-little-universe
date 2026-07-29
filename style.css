@@ -567,43 +567,50 @@ linear-gradient(135deg,#241033,#050014);
     position:absolute;
 
     width:220px;
-
     height:140px;
 
-    background:white;
+    background:
+    linear-gradient(#fff8e8,#f5dfc2);
 
     left:20px;
-
     top:20px;
 
-    border-radius:5px;
+    border-radius:8px;
 
     text-align:center;
 
     padding:20px;
-    
+
     color:#5a3150;
-    
+
     z-index:2;
-    
-}
 
-
-
-.letter h2 {
-
-    color:#c04b83;
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.2),
+    inset 0 0 20px rgba(180,120,80,0.15);
 
     font-family:'Cormorant Garamond',serif;
 
 }
 
 
+.letter h2 {
+
+    color:#b04a78;
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:2rem;
+
+}
+
 .letter p {
 
     color:#5a3150;
 
-    font-size:1rem;
+    font-size:1.1rem;
+
+    line-height:1.4;
 
 }
 

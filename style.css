@@ -627,31 +627,6 @@ linear-gradient(135deg,#241033,#050014);
     color:#5a3150 !important;
 
 }
-.love-line {
-
-    margin-top:20px;
-
-    font-size:1.4rem;
-
-    color:#ffd6ea;
-
-    font-family:'Cormorant Garamond',serif;
-
-    letter-spacing:2px;
-
-    animation: glowLove 2s infinite alternate;
-
-}
-
-
-@keyframes glowLove {
-
-    from {
-
-        text-shadow:0 0 5px #ff9fcf;
-
-    }
-
 
     to {
 

@@ -426,3 +426,6 @@ button:hover {
     min-height:25px;
 
 }
+#intro {
+    transition: opacity 1s ease;
+}

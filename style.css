@@ -673,20 +673,30 @@ linear-gradient(135deg,#241033,#050014);
 
     height:80vh;
 
-    background:#fff8f0;
+   background:
+linear-gradient(180deg,#fffdf8,#f8edd8);
 
     padding:35px;
 
-    border-radius:15px;
+    border-radius:18px;
 
-    box-shadow:0 0 40px rgba(255,180,220,0.5);
+   box-shadow:
+0 25px 60px rgba(0,0,0,.35),
+0 0 35px rgba(255,180,220,.25);
 
     overflow-y:auto;
 
     transition:1s;
 
-    z-index:100;
+    z-index:100; 
+    
+border:2px solid rgba(180,140,90,.25);
 
+font-family:'Cormorant Garamond',serif;
+
+line-height:1.9;
+
+color:#4b2d2d;
 }
 
 
@@ -908,5 +918,20 @@ linear-gradient(135deg,#241033,#050014);
     text-shadow:0 0 20px #ff8fc6;
 
     margin-bottom:40px;
+
+}
+.full-letter::before{
+
+    content:"❤️";
+
+    position:absolute;
+
+    top:25px;
+
+    right:30px;
+
+    font-size:24px;
+
+    opacity:.25;
 
 }

@@ -92,21 +92,71 @@ document.addEventListener("click", function(e){
 
 // OPEN HEART BUTTON
 
+// OPEN HEART BUTTON
+
 const button = document.getElementById("openButton");
 
+const passwordPage = document.getElementById("passwordPage");
 
-button.addEventListener("click",function(){
 
-    button.innerHTML="❤️ Opening your heart...";
+button.addEventListener("click", function(){
 
-    button.style.transform="scale(1.1)";
+
+    button.innerHTML = "❤️ Opening your heart...";
+
+
+    button.style.transform = "scale(1.1)";
 
 
     setTimeout(function(){
 
-        alert("Next chapter coming soon ❤️");
+
+        passwordPage.style.opacity = "1";
+
+        passwordPage.style.pointerEvents = "all";
+
 
     },1500);
+
+
+});
+
+
+
+// PASSWORD CHECK
+
+const unlockButton = document.getElementById("unlockButton");
+
+const passwordInput = document.getElementById("passwordInput");
+
+const passwordMessage = document.getElementById("passwordMessage");
+
+
+
+unlockButton.addEventListener("click",function(){
+
+
+    let answer = passwordInput.value.toLowerCase();
+
+
+
+    if(answer === "khushu"){
+
+
+        passwordMessage.innerHTML =
+        "❤️ Welcome back, Khushu";
+
+
+    }
+
+    else {
+
+
+        passwordMessage.innerHTML =
+        "Hmm... that's not my favorite person ❤️";
+
+
+    }
 
 
 });

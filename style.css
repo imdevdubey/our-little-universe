@@ -682,3 +682,46 @@ button:hover {
     transition:1s;
 
 }
+.full-letter {
+
+    position:fixed;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%) scale(0);
+
+    width:85%;
+
+    max-width:600px;
+
+    height:80vh;
+
+    background:#fff8f0;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 0 40px rgba(255,180,220,0.5);
+
+    overflow-y:auto;
+
+    transition:1s;
+
+    z-index:100;
+
+}
+
+
+.envelope.open .full-letter {
+
+    transform:translate(-50%,-50%) scale(1);
+
+}
+.letter-title {
+
+    color:#c04b83;
+
+}

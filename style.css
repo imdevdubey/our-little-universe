@@ -158,7 +158,7 @@ body {
     opacity:0;
 
     animation:
-    appear 3s forwards;
+    fadeIn 3s forwards;
 
     animation-delay:8s;
 

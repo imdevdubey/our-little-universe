@@ -516,6 +516,8 @@ button:hover {
     border-right:130px solid transparent;
 
     border-top:90px solid #ffc2df;
+    
+    z-index:1;
 
 }
 
@@ -542,6 +544,8 @@ button:hover {
     padding:20px;
     
     color:#5a3150;
+    
+    z-index:2;
     
 }
 

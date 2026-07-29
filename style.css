@@ -17,17 +17,31 @@ body {
 /* MAIN INTRO */
 
 #intro {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    height:100vh;
+    width:100%;
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    overflow:hidden;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
     background:
     radial-gradient(circle at top, #241044, #050014 60%);
-}
 
+    transition:opacity 1s ease;
+
+    z-index:10;
+
+}
 
 /* STARS */
 
@@ -298,7 +312,8 @@ button:hover {
 
     height:100vh;
     width:100%;
-
+    
+    z-index:20;
     display:flex;
 
     flex-direction:column;

@@ -105,25 +105,28 @@ button.addEventListener("click", function(){
     button.innerHTML = "❤️ Opening your heart...";
 
 
-    button.style.transform = "scale(1.1)";
-
-
-setTimeout(function(){
-
-    intro.style.opacity = "0";
-
     setTimeout(function(){
 
-        intro.style.display = "none";
-
-        passwordPage.style.opacity = "1";
-
-        passwordPage.style.pointerEvents = "all";
-
-    },1000);
+        intro.style.opacity = "0";
 
 
-},1500);
+        setTimeout(function(){
+
+            intro.style.display = "none";
+
+
+            passwordPage.style.opacity = "1";
+
+            passwordPage.style.pointerEvents = "all";
+
+
+        },1000);
+
+
+    },1500);
+
+
+});
 
 
 });

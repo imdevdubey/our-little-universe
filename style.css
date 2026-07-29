@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -889,5 +890,31 @@ linear-gradient(135deg,#241033,#050014);
         opacity:0;
 
     }
+
+}
+.main-title{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:3.2rem;
+
+    color:white;
+
+    margin-bottom:8px;
+
+}
+
+
+.pet-name{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:4rem;
+
+    color:#ffd4e7;
+
+    text-shadow:0 0 20px #ff8fc6;
+
+    margin-bottom:40px;
 
 }

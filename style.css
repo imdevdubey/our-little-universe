@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    background: #050014;
+    color: white;
+    cursor: none;
+}
+
+
+/* MAIN INTRO */
+
+#intro {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+    radial-gradient(circle at top, #241044, #050014 60%);
+}
+
+
+/* STARS */
+
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image:
+    radial-gradient(white 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.7;
+    animation: twinkle 4s infinite alternate;
+}
+
+
+@keyframes twinkle {
+
+    from {
+        opacity:0.4;
+    }
+
+    to {
+        opacity:0.9;
+    }
+
+}
+
+
+
+/* MOON */
+
+.moon {
+
+    position:absolute;
+
+    width:120px;
+    height:120px;
+
+    background:
+    radial-gradient(circle,#fff4cc,#ffd6f5);
+
+    border-radius:50%;
+
+    top:12%;
+    right:15%;
+
+    box-shadow:
+    0 0 40px #ffd6f5,
+    0 0 90px #ffb7e8;
+
+    animation: moonGlow 3s infinite alternate;
+
+}
+
+
+
+@keyframes moonGlow {
+
+    from {
+        transform:scale(1);
+    }
+
+    to {
+        transform:scale(1.08);
+    }
+
+}
+
+
+
+/* TEXT AREA */
+
+.intro-text {
+
+    text-align:center;
+    z-index:5;
+    padding:20px;
+
+}
+
+
+#line1,
+#line2 {
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:2rem;
+    font-weight:400;
+
+    opacity:0;
+
+    animation:
+    fadeIn 3s forwards;
+
+}
+
+
+#line2 {
+
+    animation-delay:4s;
+
+}
+
+
+
+@keyframes fadeIn {
+
+    from {
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to {
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+
+/* TITLE */
+
+
+#mainTitle {
+
+    margin-top:60px;
+
+    opacity:0;
+
+    animation:
+    appear 3s forwards;
+
+    animation-delay:8s;
+
+}
+
+
+#mainTitle h1 {
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:3.5rem;
+
+    letter-spacing:2px;
+
+}
+
+
+#mainTitle h3 {
+
+    font-size:2rem;
+
+    margin:15px;
+
+    color:#ffb7d5;
+
+}
+
+
+
+/* BUTTON */
+
+button {
+
+    margin-top:30px;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    border:1px solid rgba(255,255,255,0.3);
+
+    background:
+    rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(10px);
+
+    color:white;
+
+    font-size:1.1rem;
+
+    cursor:pointer;
+
+    transition:0.4s;
+
+}
+
+
+
+button:hover {
+
+    transform:scale(1.1);
+
+    box-shadow:
+    0 0 30px #ff9ed2;
+
+}
+
+
+
+/* HEART CURSOR */
+
+
+.heart-cursor {
+
+    position:absolute;
+
+    pointer-events:none;
+
+    font-size:18px;
+
+    z-index:100;
+
+    animation:
+    heartFade 1s forwards;
+
+}
+
+
+@keyframes heartFade {
+
+    from {
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+    to {
+
+        opacity:0;
+        transform:translateY(-40px);
+
+    }
+
+}
+
+
+
+/* MOBILE */
+
+
+@media(max-width:600px){
+
+    #mainTitle h1{
+
+        font-size:2.2rem;
+
+    }
+
+
+    #line1,
+    #line2{
+
+        font-size:1.5rem;
+
+    }
+
+}

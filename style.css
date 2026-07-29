@@ -540,7 +540,9 @@ button:hover {
     text-align:center;
 
     padding:20px;
-
+    
+    color:#5a3150;
+    
 }
 
 
@@ -553,6 +555,14 @@ button:hover {
 
 }
 
+
+.letter p {
+
+    color:#5a3150;
+
+    font-size:1rem;
+
+}
 
 
 .open-text {

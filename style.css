@@ -217,13 +217,9 @@ opacity:0.6;
 
 
 #mainTitle h1 {
-
-   font-family:'Great Vibes',cursive;
-
+    font-family:'Great Vibes', cursive !important;
     font-size:3.5rem;
-
     letter-spacing:2px;
-
 }
 
 
@@ -629,13 +625,7 @@ linear-gradient(135deg,#241033,#050014);
 
 }
 
-    to {
-
-        text-shadow:0 0 20px #ffb7d5;
-
-    }
-
-}
+  
 .envelope.open .flap {
 
     transform:rotateX(180deg);

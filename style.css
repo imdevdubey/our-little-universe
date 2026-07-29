@@ -784,7 +784,6 @@ linear-gradient(135deg,#241033,#050014);
 /* FLOATING HEARTS */
 
 .floating-hearts{
-
     position:absolute;
 
     width:100%;
@@ -794,8 +793,8 @@ linear-gradient(135deg,#241033,#050014);
 
     pointer-events:none;
 
+    z-index:1;
 }
-
 
 .floating-hearts span{
 

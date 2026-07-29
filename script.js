@@ -97,7 +97,7 @@ document.addEventListener("click", function(e){
 const button = document.getElementById("openButton");
 
 const passwordPage = document.getElementById("passwordPage");
-
+const intro = document.getElementById("intro");
 
 button.addEventListener("click", function(){
 
@@ -108,15 +108,22 @@ button.addEventListener("click", function(){
     button.style.transform = "scale(1.1)";
 
 
+setTimeout(function(){
+
+    intro.style.opacity = "0";
+
     setTimeout(function(){
 
+        intro.style.display = "none";
 
         passwordPage.style.opacity = "1";
 
         passwordPage.style.pointerEvents = "all";
 
+    },1000);
 
-    },1500);
+
+},1500);
 
 
 });

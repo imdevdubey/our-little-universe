@@ -152,11 +152,41 @@ unlockButton.addEventListener("click",function(){
     if(answer === "khushu"){
 
 
-        passwordMessage.innerHTML =
-        "❤️ Welcome back, Khushu";
+    passwordMessage.innerHTML =
+    "❤️ Welcome back, Khushu";
 
 
-    }
+    setTimeout(function(){
+
+
+        passwordPage.style.opacity = "0";
+
+        passwordPage.style.pointerEvents = "none";
+
+
+        setTimeout(function(){
+
+
+            passwordPage.style.display = "none";
+
+
+            const envelopePage =
+            document.getElementById("envelopePage");
+
+
+            envelopePage.style.opacity = "1";
+
+
+            envelopePage.style.pointerEvents = "all";
+
+
+        },1000);
+
+
+    },1500);
+
+
+}
 
     else {
 

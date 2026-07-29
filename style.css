@@ -129,7 +129,7 @@ opacity:0.6;
     0 0 40px #ffd6f5,
     0 0 90px #ffb7e8;
 
-    animation: moonGlow 3s infinite alternate;
+   animation:none;
 
 }
 

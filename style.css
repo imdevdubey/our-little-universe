@@ -287,3 +287,142 @@ button:hover {
     }
 
 }
+/* PASSWORD PAGE */
+
+#passwordPage {
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    height:100vh;
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:
+    radial-gradient(circle at center,#32154f,#050014);
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:2s;
+
+}
+
+
+
+#passwordPage .lock {
+
+    font-size:70px;
+
+    margin-bottom:30px;
+
+    animation:
+    lockGlow 2s infinite alternate;
+
+}
+
+
+
+@keyframes lockGlow {
+
+    from {
+
+        filter:drop-shadow(0 0 5px #ffb7d5);
+
+    }
+
+
+    to {
+
+        filter:drop-shadow(0 0 30px #ff7fc8);
+
+    }
+
+}
+
+
+
+#passwordPage h2 {
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:2.5rem;
+
+    font-weight:400;
+
+}
+
+
+
+#passwordPage p {
+
+    margin:15px;
+
+    font-size:1.1rem;
+
+    color:#ffd6ea;
+
+}
+
+
+
+#passwordInput {
+
+    width:280px;
+
+    padding:15px;
+
+    border-radius:30px;
+
+    border:none;
+
+    outline:none;
+
+    text-align:center;
+
+    font-size:1rem;
+
+    background:
+
+    rgba(255,255,255,0.15);
+
+    color:white;
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+
+#passwordInput::placeholder {
+
+    color:#ffd6ea;
+
+}
+
+
+
+#unlockButton {
+
+    margin-top:25px;
+
+}
+
+
+
+#passwordMessage {
+
+    min-height:25px;
+
+}

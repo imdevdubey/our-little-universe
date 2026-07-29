@@ -207,3 +207,16 @@ envelope.addEventListener("click",function(){
     envelope.classList.add("open");
 
 });
+// OPEN FULL LETTER
+
+const smallLetter = document.getElementById("smallLetter");
+
+const fullLetter = document.getElementById("fullLetter");
+
+
+smallLetter.addEventListener("click",function(){
+
+    fullLetter.style.transform =
+    "translate(-50%,-50%) scale(1)";
+
+});

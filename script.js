@@ -199,8 +199,7 @@ unlockButton.addEventListener("click",function(){
 
 
 });
-const envelope =
-document.getElementById("envelope");
+const envelope = document.getElementById("envelope");
 
 
 envelope.addEventListener("click",function(){

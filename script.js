@@ -97,11 +97,13 @@ document.addEventListener("click", function(e){
 const button = document.getElementById("openButton");
 
 const passwordPage = document.getElementById("passwordPage");
+
 const intro = document.getElementById("intro");
+
 
 button.addEventListener("click", function(){
 
-
+    
     button.innerHTML = "❤️ Opening your heart...";
 
 
@@ -124,9 +126,6 @@ button.addEventListener("click", function(){
 
 
     },1500);
-
-
-});
 
 
 });
